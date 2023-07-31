@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "8.1.0.0.283" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "fillx,hidemode 3,align center center"
+			"$columnConstraints": "rel[50:n:71,fill]rel[410,fill][50:n:71,fill]"
+			"$rowConstraints": "[313,grow]0[108]0[68]0[83]0[62]"
+		} ) {
+			name: "actionMenuPanel"
+			"foreground": new java.awt.Color( 153, 255, 153, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Action Menu"
+				"font": new java.awt.Font( "Segoe UI", 0, 48 )
+				"foreground": sfield java.awt.Color orange
+				"background": new java.awt.Color( 255, 255, 153, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 0,align center top,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Make a Move"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 28 )
+				"foreground": sfield java.awt.Color black
+				"background": &Color0 new java.awt.Color( 102, 102, 102, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1,grow"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "See Inventory"
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+				"background": #Color0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "History"
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+				"background": #Color0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Exit"
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+				"background": #Color0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 4"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 90, 5 )
+			"size": new java.awt.Dimension( 710, 595 )
+		} )
+	}
+}
